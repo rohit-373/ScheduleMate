@@ -1,3 +1,5 @@
 credentials.json
+credentials[0-9]*.json
 token.json
 .env
+.env[0-9]*

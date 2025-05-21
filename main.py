@@ -10,8 +10,7 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
 load_dotenv()
-academics = os.getenv("ACADEMICS")
-extraCurricular = os.getenv("EXTRA_CURRICULAR")
+tokenID = os.getenv("CALENDAR_ID")
 
 with open('timetable.json') as f:
     timetable = json.load(f)
@@ -98,7 +97,7 @@ def create_event(service, courseTitle, courseCode, slotCombined, venue, facultyN
                     'colorId': colorCode,
                 }
 
-                event = service.events().insert(calendarId=academics, body=event).execute()
+                event = service.events().insert(calendarId=tokenID, body=event).execute()
         else:
             print(f"Slot {slot} not found in timetable.")
             return None
@@ -125,8 +124,12 @@ def main():
             print('Available colors:')
             for i, color in enumerate(availableColors.keys(), start=1):
                 print(f"{i}. {color}")
-            colorName = input('Enter the color name: ')
-            colorCode = availableColors.get(colorName, 1)
+            colorName = input('Enter the color name or number: ')
+            if colorName.isdigit():
+                colorName = list(availableColors.keys())[int(colorName) - 1]
+            else:
+                colorName = colorName.lower()
+            colorCode = availableColors.get(colorName, 8)
 
             create_event(service, courseTitle, courseCode, slotCombined, venue, facultyName, colorCode)
 
