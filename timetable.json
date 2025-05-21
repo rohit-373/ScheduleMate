@@ -1,0 +1,396 @@
+{
+    "A1": {
+        "sessions": [
+           {
+               "weekDay": "MO",
+               "startTime": "08:00",
+               "endTime": "08:50"
+           },
+           {
+               "weekDay": "WE",
+               "startTime": "08:55",
+               "endTime": "09:45"
+           }
+        ]
+    },
+    "B1": {
+        "sessions": [
+           {
+               "weekDay": "TU",
+               "startTime": "08:00",
+               "endTime": "08:50"
+           },
+           {
+               "weekDay": "TH",
+               "startTime": "08:55",
+               "endTime": "09:45"
+           }
+        ]
+    },
+    "C1": {
+        "sessions": [
+           {
+               "weekDay": "WE",
+               "startTime": "08:00",
+               "endTime": "08:50"
+           },
+           {
+               "weekDay": "FR",
+               "startTime": "08:55",
+               "endTime": "09:45"
+           }
+        ]
+    },
+    "D1": {
+        "sessions": [
+           {
+               "weekDay": "TH",
+               "startTime": "08:00",
+               "endTime": "08:50"
+           },
+           {
+                "weekDay": "MO",
+                "startTime": "09:50",
+                "endTime": "10:40"
+           }
+        ]
+    },
+    "E1": {
+        "sessions": [
+           {
+               "weekDay": "FR",
+               "startTime": "08:00",
+               "endTime": "08:50"
+           },
+           {
+                "weekDay": "TU",
+                "startTime": "09:50",
+                "endTime": "10:40"
+           }
+        ]
+    },
+    "F1": {
+        "sessions": [
+           {
+               "weekDay": "MO",
+               "startTime": "08:55",
+               "endTime": "09:45"
+           },
+           {
+                "weekDay": "WE",
+                "startTime": "09:50",
+                "endTime": "10:40"
+           }
+        ]
+    },
+    "G1": {
+        "sessions": [
+           {
+               "weekDay": "TU",
+               "startTime": "08:55",
+               "endTime": "09:45"
+           },
+           {
+                "weekDay": "TH",
+                "startTime": "09:50",
+                "endTime": "10:40"
+           }
+        ]
+    },
+    "TA1": {
+        "sessions": [
+           {
+                "weekDay": "FR",
+                "startTime": "09:50",
+                "endTime": "10:40"
+           }
+        ]
+    },
+    "TB1": {
+        "sessions": [
+           {
+                "weekDay": "MO",
+                "startTime": "10:45",
+                "endTime": "11:35"
+           }
+        ]
+    },
+    "TC1": {
+        "sessions": [
+           {
+                "weekDay": "TU",
+                "startTime": "10:45",
+                "endTime": "11:35"
+           }
+        ]
+    },
+    "TD1": {
+        "sessions": [
+           {
+                "weekDay": "WE",
+                "startTime": "10:45",
+                "endTime": "11:35"
+           }
+        ]
+    },
+    "TE1": {
+        "sessions": [
+           {
+                "weekDay": "TH",
+                "startTime": "10:45",
+                "endTime": "11:35"
+           }
+        ]
+    },
+    "TF1": {
+        "sessions": [
+           {
+                "weekDay": "FR",
+                "startTime": "10:45",
+                "endTime": "11:35"
+           }
+        ]
+    },
+    "TG1": {
+        "sessions": [
+           {
+                "weekDay": "MO",
+                "startTime": "11:40",
+                "endTime": "12:30"
+           }
+        ]
+    },
+    "TAA1": {
+        "sessions": [
+           {
+                "weekDay": "TU",
+                "startTime": "11:40",
+                "endTime": "12:30"
+           }
+        ]
+    },
+    "TBB1": {
+        "sessions": [
+           {
+                "weekDay": "WE",
+                "startTime": "11:40",
+                "endTime": "12:30"
+           }
+        ]
+    },
+    "TCC1": {
+        "sessions": [
+           {
+                "weekDay": "TH",
+                "startTime": "11:40",
+                "endTime": "12:30"
+           }
+        ]
+    },
+    "TDD1": {
+        "sessions": [
+           {
+                "weekDay": "FR",
+                "startTime": "11:40",
+                "endTime": "12:30"
+           }
+        ]
+    },
+    "A2": {
+        "sessions": [
+           {
+               "weekDay": "MO",
+               "startTime": "14:00",
+               "endTime": "14:50"
+           },
+           {
+               "weekDay": "WE",
+               "startTime": "14:55",
+               "endTime": "15:45"
+           }
+        ]
+    },
+    "B2": {
+        "sessions": [
+           {
+               "weekDay": "TU",
+               "startTime": "14:00",
+               "endTime": "14:50"
+           },
+           {
+               "weekDay": "TH",
+               "startTime": "14:55",
+               "endTime": "15:45"
+           }
+        ]
+    },
+    "C2": {
+        "sessions": [
+           {
+               "weekDay": "WE",
+               "startTime": "14:00",
+               "endTime": "14:50"
+           },
+           {
+               "weekDay": "FR",
+               "startTime": "14:55",
+               "endTime": "15:45"
+           }
+        ]
+    },
+    "D2": {
+        "sessions": [
+           {
+               "weekDay": "TH",
+               "startTime": "14:00",
+               "endTime": "14:50"
+           },
+           {
+                "weekDay": "MO",
+                "startTime": "15:50",
+                "endTime": "16:40"
+           }
+        ]
+    },
+    "E2": {
+        "sessions": [
+           {
+               "weekDay": "FR",
+               "startTime": "14:00",
+               "endTime": "14:50"
+           },
+           {
+                "weekDay": "TU",
+                "startTime": "15:50",
+                "endTime": "16:40"
+           }
+        ]
+    },
+    "F2": {
+        "sessions": [
+           {
+               "weekDay": "MO",
+               "startTime": "14:55",
+               "endTime": "15:45"
+           },
+           {
+                "weekDay": "WE",
+                "startTime": "15:50",
+                "endTime": "16:40"
+           }
+        ]
+    },
+    "G2": {
+        "sessions": [
+           {
+               "weekDay": "TU",
+               "startTime": "14:55",
+               "endTime": "15:45"
+           },
+           {
+                "weekDay": "TH",
+                "startTime": "15:50",
+                "endTime": "16:40"
+           }
+        ]
+    },
+    "TA2": {
+        "sessions": [
+           {
+                "weekDay": "FR",
+                "startTime": "15:50",
+                "endTime": "16:40"
+           }
+        ]
+    },
+    "TB2": {
+        "sessions": [
+           {
+                "weekDay": "MO",
+                "startTime": "16:45",
+                "endTime": "17:35"
+           }
+        ]
+    },
+    "TC2": {
+        "sessions": [
+           {
+                "weekDay": "TU",
+                "startTime": "16:45",
+                "endTime": "17:35"
+           }
+        ]
+    },
+    "TD2": {
+        "sessions": [
+           {
+                "weekDay": "WE",
+                "startTime": "16:45",
+                "endTime": "17:35"
+           }
+        ]
+    },
+    "TE2": {
+        "sessions": [
+           {
+                "weekDay": "TH",
+                "startTime": "16:45",
+                "endTime": "17:35"
+           }
+        ]
+    },
+    "TF2": {
+        "sessions": [
+           {
+                "weekDay": "FR",
+                "startTime": "16:45",
+                "endTime": "17:35"
+           }
+        ]
+    },
+    "TG2": {
+        "sessions": [
+           {
+                "weekDay": "MO",
+                "startTime": "17:40",
+                "endTime": "18:30"
+           }
+        ]
+    },
+    "TAA2": {
+        "sessions": [
+           {
+                "weekDay": "TU",
+                "startTime": "17:40",
+                "endTime": "18:30"
+           }
+        ]
+    },
+    "TBB2": {
+        "sessions": [
+           {
+                "weekDay": "WE",
+                "startTime": "17:40",
+                "endTime": "18:30"
+           }
+        ]
+    },
+    "TCC2": {
+        "sessions": [
+           {
+                "weekDay": "TH",
+                "startTime": "17:40",
+                "endTime": "18:30"
+           }
+        ]
+    },
+    "TDD2": {
+        "sessions": [
+           {
+                "weekDay": "FR",
+                "startTime": "17:40",
+                "endTime": "18:30"
+           }
+        ]
+    }
+}
