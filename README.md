@@ -15,7 +15,8 @@ A Python Script to automatically create VIT Chennai courses timetable in Google 
     - Click **Audience** 
     - Add your Gmail ID in **+ Add users** under **Test users**
 6. Place the downloaded `credentials.json` in the same folder as this script
-7. Run the script: `python main.py`
-8. A browser window will open - **sign in to your Google account** and **authorize access**
-9. Enter your course details when prompted
+7. Install the following packages: `pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib python-dotenv`
+8. Run the script: `python main.py`
+9. A browser window will open - **sign in to your Google account** and **authorize access**
+10. Enter your course details when prompted
 

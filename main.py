@@ -1,5 +1,5 @@
 import os.path
-from datetime import date, timedelta
+from datetime import date, timedelta, datetime
 from dotenv import load_dotenv
 import json
 
@@ -31,15 +31,15 @@ availableColors = {
 
 SCOPES = ["https://www.googleapis.com/auth/calendar"]
 
-def next_weekday(weekday: str) -> date:
+def next_weekday(weekday: str, startDate: date) -> date:
     """
     Returns the date of the next occurrence of a given weekday.
     """
     weekdays = {"MO": 0, "TU": 1, "WE": 2, "TH": 3, "FR": 4, "SA": 5, "SU": 6}
-    days_ahead = weekdays[weekday] - date.today().weekday()
+    days_ahead = weekdays[weekday] - startDate.weekday()
     if days_ahead < 0:
         days_ahead += 7
-    return date.today() + timedelta(days_ahead)
+    return startDate + timedelta(days_ahead)
 
 def init_calendar() -> object:
     """
@@ -62,7 +62,7 @@ def init_calendar() -> object:
 
     return build("calendar", "v3", credentials=creds)
 
-def create_event(service, courseTitle, courseCode, slotCombined, venue, facultyName, colorCode) -> None:
+def create_event(service, startDate, endDate, courseTitle, courseCode, slotCombined, venue, facultyName, colorCode) -> None:
     """
     Creates a Google Calendar event.
     """
@@ -78,15 +78,15 @@ def create_event(service, courseTitle, courseCode, slotCombined, venue, facultyN
                     'description': f'{courseCode} - {facultyName}',
                     'location': venue,
                     'start': {
-                        'dateTime': f'{next_weekday(weekDay)}T{startTime}:00+05:30',
+                        'dateTime': f'{next_weekday(weekDay, startDate)}T{startTime}:00+05:30',
                         'timeZone': 'Asia/Kolkata',
                     },
                     'end': {
-                        'dateTime': f'{next_weekday(weekDay)}T{endTime}:00+05:30',
+                        'dateTime': f'{next_weekday(weekDay, startDate)}T{endTime}:00+05:30',
                         'timeZone': 'Asia/Kolkata',
                     },
                     'recurrence': [
-                        f'RRULE:FREQ=WEEKLY;WKST=SU;BYDAY={weekDay}'
+                        f'RRULE:FREQ=WEEKLY;WKST=SU;BYDAY={weekDay};UNTIL={endDate.strftime("%Y%m%dT000000Z")}'
                     ],
                     'reminders': {
                         'useDefault': False,
@@ -114,6 +114,9 @@ def main():
         # Build the Google Calendar API service
         service = init_calendar()
 
+        startDate = datetime.strptime(input('Enter the start date (DD-MM-YYYY): '), '%d-%m-%Y').date()
+        endDate = datetime.strptime(input('Enter the end date (DD-MM-YYYY): '), '%d-%m-%Y').date()
+
         loop = True
         while loop:
             courseTitle = input('Enter the course title: ')
@@ -131,7 +134,7 @@ def main():
                 colorName = colorName.lower()
             colorCode = availableColors.get(colorName, 8)
 
-            create_event(service, courseTitle, courseCode, slotCombined, venue, facultyName, colorCode)
+            create_event(service, startDate, endDate, courseTitle, courseCode, slotCombined, venue, facultyName, colorCode)
 
             ask = input('Do you want to add another course? (y/n): ')
             if ask.lower() == 'y':
